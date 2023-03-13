@@ -1,24 +1,25 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+
+typedef struct
 {
-    struct developers
-    {
-        char name;
-        char aliase;
-    }d1;
-    struct developers d1 = {"Mathis Stützle", "Student"};
+   char name[25];
+   char aliase[12];
+   
+} Developers;
 
-    /*d2;
-    struct developers d2 = {"Linus Hahne", "Student"};
-    */
+int main() 
+{
 
-    printf("%s", d1.name);
-    printf("%s", d1.aliase);
-/*
-    printf("%s", d2.name);
-    printf("%s", d2.aliase);
-    */
+   Developers D1 = {"Mathis Stützle", "Student"};
+   Developers D2 = {"Linus Hahne", "Student"};
+
+   printf("%s\n", D1.name);
+   printf("%s\n", D1.aliase);
+   printf("\n");
+   printf("%s\n", D2.name);
+   printf("%s\n", D2.aliase);
+
+   return 0; 
 }
-

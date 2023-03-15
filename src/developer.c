@@ -1,4 +1,4 @@
-#include include/developer.h
+#include </workspaces/Programmentwurf/include/developer.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,10 +8,9 @@ void developer_print(developer const *const s)
 {
 printf("=====================\n");
         
-        printf("\033[4;35m%s\033[0m\n", s->name);
-        printf("ID: %u\n", s->id);
+        printf("%c", s->name);
         printf("=====================\n");
-        printf(" Grades: \n");
+        printf("%c", s->alias);
 
 }
 
@@ -38,28 +37,28 @@ printf("=====================\n");
 
 
 
- /*#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 
 
-typedef struct
-{
-   char name[25];
-   char aliase[12];
+//typedef struct
+//{
+ //  char name[25];
+  // char aliase[12];
    
-} Developers;
+//} Developers;
 
-int main() 
-{
+//int main() 
+//{
 
-   Developers D1 = {"Mathis Stützle", "Student"};
-   Developers D2 = {"Linus Hahne", "Student"};
+ //  Developers D1 = {"Mathis Stützle", "Student"};
+ //  Developers D2 = {"Linus Hahne", "Student"};
 
-   printf("%s\n", D1.name);
-   printf("%s\n", D1.aliase);
-   printf("\n");
-   printf("%s\n", D2.name);
-   printf("%s\n", D2.aliase);
+  // printf("%s\n", D1.name);
+  // printf("%s\n", D1.aliase);
+  // printf("\n");
+  // printf("%s\n", D2.name);
+  // printf("%s\n", D2.aliase);
 
-   return 0; 
-}
+  // return 0; 
+//}

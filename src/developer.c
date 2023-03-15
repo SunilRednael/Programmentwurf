@@ -1,4 +1,44 @@
+#include include/developer.h
+
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void developer_print(developer const *const s)
+{
+printf("=====================\n");
+        
+        printf("\033[4;35m%s\033[0m\n", s->name);
+        printf("ID: %u\n", s->id);
+        printf("=====================\n");
+        printf(" Grades: \n");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*#include <stdio.h>
 #include <string.h>
 
 

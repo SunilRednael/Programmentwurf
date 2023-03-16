@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include </workspaces/Programmentwurf/include/developer_group.h>
+#include "/workspaces/Programmentwurf/include/developer_group.h"
 
 
 void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])

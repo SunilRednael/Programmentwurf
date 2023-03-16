@@ -1,8 +1,8 @@
 #ifndef DEVELOPER_H_
 #define DEVELOPER_H_
 
-#define max_name_length 7
-#define max_alias_length 8
+#define max_name_length 25
+#define max_alias_length 45
 
 typedef struct developer{
     char name[max_name_length];

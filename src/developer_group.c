@@ -1,32 +1,30 @@
 #include <stdio.h>
 #include <string.h>
+#include </workspaces/Programmentwurf/include/developer_group.h>
 
-typedef struct
 
+void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])
 {
- 
-   char logo;
-   
-} Developer_Logo;
+   if(developer_group == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
+   {
+      printf("ERROR");
+      return;
+   }
 
-int main() 
-{
-
-   Developer_Logo dl1 = 
-
-{   -------------   -------------   -------------   -------------   -------------- |             |  --------------
-   |             | |             | |             | |               |               |             | |              
-   |             | |             |	|            | |               |               |             | |              
-   |             | |             |  -------------   -------------  |                -------------   --------------
-    -------------  |             | |           | 		         | |               |             | |              
-   |               |             | |            |	 	         | |               |             | |             
-   |                -------------  |             |  -------------   -------------- |             |  -------------- };
-
-
-printf("%s", dl1);                                                                                   
+   developer_group->developer[0] = *dev1;
+   developer_group->developer[1] = *dev2;
+   strncpy(developer_group->logo, 
+      " -------------   -------------   -------------   -------------   -------------- |             |  --------------\n|             | |             | |             | |               |               |             | |              \n|             | |             |	|            | |               |               |             | |              \n|             | |             |  -------------   -------------  |                -------------   --------------\n -------------  |             | |           | 		         | |               |             | |              \n      |               |             | |            |	 	         | |               |             | |             \n      |                -------------  |             |  -------------   -------------- |             |  -------------- \n", strlen(logo) + 1);
 
 }
 
+void print_developer(developer developer[])
+{
+   for(int i = 0; i < DEVELOPER_AMOUNT; i++)
+   {
+      printf("Developer %d ist : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
+   }
+}
 
 
 

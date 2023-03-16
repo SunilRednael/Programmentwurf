@@ -1,17 +1,13 @@
-#include </workspaces/Programmentwurf/include/developer.h>
+#include "/workspaces/Programmentwurf/include/developer.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-void developer_print(developer *developer)
+void developer_init(developer *developer, char name[], char alias[])
 {
-printf("=====================\n");
-        
-        printf("%s", developer->name);
-        printf("=====================\n");
-        printf("%s", developer->alias);
-
+ strncpy(developer->name, name, sizeof(developer->name));
+ strncpy(developer->alias, alias, sizeof(developer->alias));
 }
 
 

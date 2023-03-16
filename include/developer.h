@@ -1,19 +1,16 @@
 #ifndef DEVELOPER_H_
 #define DEVELOPER_H_
 
-#define name
-#define alias
+#define max_name_length 8
+#define max_alias_length 9
 
-typedef struct
-{
-    unsigned int id;
-    char name(NAME);
-    char alias(ALIAS);
+typedef struct developer{
+    char name[max_name_length];
+    char alias[max_alias_length];
 } developer;
 
-void developer_init(developer *const s, const char name()); 
-void developer_print(developer const *const s);
-void developer_add_alias(developer *const s, char alias());       
+void developer_init(developer *developer, char name[], char alias[]); 
+void developer_print(developer *developer);     
 
 
 #endif 

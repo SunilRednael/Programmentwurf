@@ -4,13 +4,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-void developer_print(developer const *const s)
+void developer_print(developer *developer)
 {
 printf("=====================\n");
         
-        printf("%c", s->name);
+        printf("%s", developer->name);
         printf("=====================\n");
-        printf("%c", s->alias);
+        printf("%s", developer->alias);
 
 }
 

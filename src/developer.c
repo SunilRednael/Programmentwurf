@@ -6,6 +6,11 @@
 
 void developer_init(developer *developer, char name[], char alias[])
 {
+  if (developer == NULL || name == NULL || alias == NULL)
+  {
+    printf("ERROR");
+    return;
+  }
  strncpy(developer->name, name, sizeof(developer->name));
  strncpy(developer->alias, alias, sizeof(developer->alias));
 }

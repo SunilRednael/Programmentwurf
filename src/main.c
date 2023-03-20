@@ -1,13 +1,14 @@
+#include <string.h>
 #include <stdio.h>
-#include </workspaces/Programmentwurf/include/developer.h>
 #include </workspaces/Programmentwurf/include/developer_group.h>
-int main(void)
 
-
-{
-    developer linus, mathis;
-    {
 int input;
+
+int main()
+{
+developer_group dev_group;
+developer_group_init(&dev_group,"Mathis", "Schwabe", "Linus", "Mr.Charming");
+
     while(1) //Abfrage findet statt, bis while Schleife manuell abgebrochen wird
 
     {
@@ -25,18 +26,25 @@ int input;
 
 if (input==1)
     {
-    developer_init(&linus, "Linus Hahne", "Student");
-    developer_init(&mathis, "Mathis Stützle", "Student");
+    print_developer(dev_group.developer);
     }
-
-    developer_group dev_group;
-developer_group_init(&dev_group, &linus, &mathis, ".");
-
-print_developer(dev_group.developer);
+if(input==2)
+    {
+    print_logo(&dev_group);
+    }
+if (input==3)
+    {
+    print_developer(dev_group.developer);
+    print_logo(&dev_group);   
+    } 
+if (input==4)
+    {
+    return 0;
+    }
 
     
-return 0;
-    }
+
+
     }
 }
 

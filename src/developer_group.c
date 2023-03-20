@@ -3,18 +3,20 @@
 #include "/workspaces/Programmentwurf/include/developer_group.h"
 
 
-void developer_group_init(developer_group *developer_group, developer *dev1, developer *dev2, char logo[])
+char logo_template[MAX_LOGO_LENGTH] =   " -------------   -------------   -------------   -------------   -------------- |             |  --------------\n|             | |             | |             | |               |               |             | |              \n|             | |             |	|             | |               |               |             | |              \n|             | |             |  -------------   -------------  |                -------------   --------------\n -------------  |             | |           | 		      | |               |             | |              \n|               |             | |            |	 	      | |               |             | |             \n|                -------------  |             |  -------------   -------------- |             |  -------------- \n";
+
+
+void developer_group_init(developer_group *developer_group, char dev1_name[], char dev1_alias[], char dev2_name[], char dev2_alias[])
 {
-   if(developer_group == NULL || dev1 == NULL || dev2 == NULL || logo == NULL)
+   if(developer_group == NULL || dev1_name == NULL || dev2_name == NULL)
    {
       printf("ERROR");
-      return;
+     return;
    }
 
-   developer_group->developer[0] = *dev1;
-   developer_group->developer[1] = *dev2;
-   strncpy(developer_group->logo, 
-      " -------------   -------------   -------------   -------------   -------------- |             |  --------------\n|             | |             | |             | |               |               |             | |              \n|             | |             |	|            | |               |               |             | |              \n|             | |             |  -------------   -------------  |                -------------   --------------\n -------------  |             | |           | 		         | |               |             | |              \n      |               |             | |            |	 	         | |               |             | |             \n      |                -------------  |             |  -------------   -------------- |             |  -------------- \n", strlen(logo) + 1);
+   developer_init(&developer_group->developer[0], dev1_name, dev1_alias);
+   developer_init(&developer_group->developer[1], dev2_name, dev2_alias);
+   strncpy(developer_group->logo, logo_template, MAX_LOGO_LENGTH);
 
 }
 
@@ -25,7 +27,15 @@ void print_developer(developer developer[])
       printf("Developer %d ist : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
    }
 }
-
+   void print_logo(developer_group *developer_group)
+   {
+      if(developer_group == NULL) 
+      {
+         printf("ERROR");
+         return;
+      }
+         printf("%s", developer_group->logo);
+}
 
 
 

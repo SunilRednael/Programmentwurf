@@ -1,2 +1,4 @@
 /workspaces/Programmentwurf/build/CMakeFiles/rebuild_cache.dir
+/workspaces/Programmentwurf/build/CMakeFiles/exec_main.dir
 /workspaces/Programmentwurf/build/CMakeFiles/edit_cache.dir
+/workspaces/Programmentwurf/build/CMakeFiles/lib1.dir

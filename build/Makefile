@@ -110,6 +110,113 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named exec_main
+
+# Build rule for target.
+exec_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 exec_main
+.PHONY : exec_main
+
+# fast build rule for target.
+exec_main/fast:
+	$(MAKE) -f CMakeFiles/exec_main.dir/build.make CMakeFiles/exec_main.dir/build
+.PHONY : exec_main/fast
+
+#=============================================================================
+# Target rules for targets named lib1
+
+# Build rule for target.
+lib1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib1
+.PHONY : lib1
+
+# fast build rule for target.
+lib1/fast:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/build
+.PHONY : lib1/fast
+
+src/developer.o: src/developer.c.o
+
+.PHONY : src/developer.o
+
+# target to build an object file
+src/developer.c.o:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer.c.o
+.PHONY : src/developer.c.o
+
+src/developer.i: src/developer.c.i
+
+.PHONY : src/developer.i
+
+# target to preprocess a source file
+src/developer.c.i:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer.c.i
+.PHONY : src/developer.c.i
+
+src/developer.s: src/developer.c.s
+
+.PHONY : src/developer.s
+
+# target to generate assembly for a file
+src/developer.c.s:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer.c.s
+.PHONY : src/developer.c.s
+
+src/developer_group.o: src/developer_group.c.o
+
+.PHONY : src/developer_group.o
+
+# target to build an object file
+src/developer_group.c.o:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer_group.c.o
+.PHONY : src/developer_group.c.o
+
+src/developer_group.i: src/developer_group.c.i
+
+.PHONY : src/developer_group.i
+
+# target to preprocess a source file
+src/developer_group.c.i:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer_group.c.i
+.PHONY : src/developer_group.c.i
+
+src/developer_group.s: src/developer_group.c.s
+
+.PHONY : src/developer_group.s
+
+# target to generate assembly for a file
+src/developer_group.c.s:
+	$(MAKE) -f CMakeFiles/lib1.dir/build.make CMakeFiles/lib1.dir/src/developer_group.c.s
+.PHONY : src/developer_group.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/exec_main.dir/build.make CMakeFiles/exec_main.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/exec_main.dir/build.make CMakeFiles/exec_main.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/exec_main.dir/build.make CMakeFiles/exec_main.dir/src/main.c.s
+.PHONY : src/main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -117,7 +224,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... exec_main"
 	@echo "... edit_cache"
+	@echo "... lib1"
+	@echo "... src/developer.o"
+	@echo "... src/developer.i"
+	@echo "... src/developer.s"
+	@echo "... src/developer_group.o"
+	@echo "... src/developer_group.i"
+	@echo "... src/developer_group.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

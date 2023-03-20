@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/Programmentwurf/include/developer.h
+
+/workspaces/Programmentwurf/include/developer_group.h
+developer.h
+/workspaces/Programmentwurf/include/developer.h
+
+/workspaces/Programmentwurf/src/main.c
+string.h
+-
+stdio.h
+-
+/workspaces/Programmentwurf/include/developer_group.h
+-
+

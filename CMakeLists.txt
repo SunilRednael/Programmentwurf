@@ -11,10 +11,17 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 # add some compile options
 add_compile_options(-Wall -Wextra -pedantic -O0)
 
-add_executable(src/main.c src/developer.c src/developer_group.c)
+# add a new library
+add_library(lib1 STATIC src/developer.c src/developer_group.c)
 
-add_library(lib1 Static src/developer.c src/developer_group.c src/main.c)
-
+# add the includes to the library
 target_include_directories(lib1 PUBLIC include)
 
-add_executable(src/developer_group )
+# add an executable and assign files to it
+add_executable(exec_main src/main.c)
+
+# add the include directories 
+target_include_directories(exec_main PUBLIC include)
+
+# link libraries
+target_link_libraries(exec_main PRIVATE lib1)

@@ -8,10 +8,11 @@
 
 extern char logo_template[];
 
-typedef struct developer_group{
+typedef struct developer_group
+{
     char logo[MAX_LOGO_LENGTH];
     developer developer[DEVELOPER_AMOUNT];
-} developer_group;
+}   developer_group;
 
 void developer_group_init(developer_group *developer_group, char dev1_name[], char dev1_alias[], char dev2_name[], char dev2_alias[]);
 

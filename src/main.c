@@ -24,32 +24,28 @@ while(1) //Abfrage findet statt, bis while Schleife manuell abgebrochen wird
 
     scanf("%d",&input); //Eingabe wird eingelesen
 
-if (input==1)
-    {
-    print_developer(dev_group.developer);
-    }
-else if(input==2)
-    {
-    print_logo(&dev_group);
-    }
-else if (input==3)
-    {
-    print_developer(dev_group.developer);
-    print_logo(&dev_group);   
-    } 
-else if (input==4)
-    {
-    return 0;
-    }
-else
-    {
-    printf("ERROR: Wrong Input\n");
-    return 0;
-    }
-
-    
-
-
+    if (input==1)
+        {
+        print_developer(dev_group.developer);
+        }
+    else if(input==2)
+        {
+        print_logo(&dev_group);
+        }
+    else if (input==3)
+         {
+         print_developer(dev_group.developer);
+        print_logo(&dev_group);   
+         } 
+    else if (input==4)
+         {
+        return 0;
+         }
+    else
+        {
+         printf("ERROR: Wrong Input\n");
+        return 0;
+        }
     }
 }
 

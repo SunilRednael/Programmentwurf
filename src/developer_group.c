@@ -11,7 +11,7 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
    if(developer_group == NULL || dev1_name == NULL || dev2_name == NULL)
    {
       printf("ERROR");
-     return;
+      return;
    }
 
    developer_init(&developer_group->developer[0], dev1_name, dev1_alias);
@@ -27,14 +27,14 @@ void print_developer(developer developer[])
       printf("Developer %d is : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
    }
 }
-   void print_logo(developer_group *developer_group)
+void print_logo(developer_group *developer_group)
    {
-      if(developer_group == NULL) 
-      {
-         printf("ERROR");
-         return;
-      }
-         printf("%s", developer_group->logo);
+   if(developer_group == NULL) 
+   {
+      printf("ERROR");
+      return;
+   }
+      printf("%s", developer_group->logo);
 }
 
 

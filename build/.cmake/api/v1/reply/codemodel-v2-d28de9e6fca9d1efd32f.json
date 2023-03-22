@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -40,14 +40,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "exec_main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-exec_main-0ae8e114140d74ca8869.json",
+					"jsonFile" : "target-exec_main-Debug-6c577c2109ba8a3ffad5.json",
 					"name" : "exec_main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lib1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lib1-c5336eeff82bd55eaad4.json",
+					"jsonFile" : "target-lib1-Debug-02a94dace6fc767c8f3d.json",
 					"name" : "lib1",
 					"projectIndex" : 0
 				}

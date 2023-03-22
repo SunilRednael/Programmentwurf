@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/workspaces/Programmentwurf/build",
+  "command": "/usr/bin/clang  -I/workspaces/Programmentwurf/include  -g   -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/exec_main.dir/src/main.c.o   -c /workspaces/Programmentwurf/src/main.c",
+  "file": "/workspaces/Programmentwurf/src/main.c"
+},
+{
+  "directory": "/workspaces/Programmentwurf/build",
+  "command": "/usr/bin/clang  -I/workspaces/Programmentwurf/include  -g   -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/lib1.dir/src/developer.c.o   -c /workspaces/Programmentwurf/src/developer.c",
+  "file": "/workspaces/Programmentwurf/src/developer.c"
+},
+{
+  "directory": "/workspaces/Programmentwurf/build",
+  "command": "/usr/bin/clang  -I/workspaces/Programmentwurf/include  -g   -Wall -Wextra -pedantic -O0 -std=gnu11 -o CMakeFiles/lib1.dir/src/developer_group.c.o   -c /workspaces/Programmentwurf/src/developer_group.c",
+  "file": "/workspaces/Programmentwurf/src/developer_group.c"
+}
+]

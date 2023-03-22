@@ -9,7 +9,7 @@ int main()
 developer_group dev_group;
 developer_group_init(&dev_group,"Mathis", "Schwabe", "Linus", "Mr.Charming");
 
-    while(1) //Abfrage findet statt, bis while Schleife manuell abgebrochen wird
+while(1) //Abfrage findet statt, bis while Schleife manuell abgebrochen wird
 
     {
         printf("\033[4;92m========================\n"); //Ausgabe der Auswahlmöglichkeiten
@@ -28,17 +28,22 @@ if (input==1)
     {
     print_developer(dev_group.developer);
     }
-if(input==2)
+else if(input==2)
     {
     print_logo(&dev_group);
     }
-if (input==3)
+else if (input==3)
     {
     print_developer(dev_group.developer);
     print_logo(&dev_group);   
     } 
-if (input==4)
+else if (input==4)
     {
+    return 0;
+    }
+else
+    {
+    printf("ERROR: Wrong Input\n");
     return 0;
     }
 

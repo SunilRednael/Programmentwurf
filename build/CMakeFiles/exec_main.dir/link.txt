@@ -1,1 +1,1 @@
-/usr/bin/clang    CMakeFiles/exec_main.dir/src/main.c.o  -o exec_main  liblib1.a 
+/usr/bin/clang -g   CMakeFiles/exec_main.dir/src/main.c.o  -o exec_main  liblib1.a 

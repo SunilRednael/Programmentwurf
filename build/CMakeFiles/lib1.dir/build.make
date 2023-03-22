@@ -60,28 +60,28 @@ include CMakeFiles/lib1.dir/flags.make
 CMakeFiles/lib1.dir/src/developer.c.o: CMakeFiles/lib1.dir/flags.make
 CMakeFiles/lib1.dir/src/developer.c.o: ../src/developer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Programmentwurf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lib1.dir/src/developer.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib1.dir/src/developer.c.o   -c /workspaces/Programmentwurf/src/developer.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib1.dir/src/developer.c.o   -c /workspaces/Programmentwurf/src/developer.c
 
 CMakeFiles/lib1.dir/src/developer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib1.dir/src/developer.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/developer.c > CMakeFiles/lib1.dir/src/developer.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/developer.c > CMakeFiles/lib1.dir/src/developer.c.i
 
 CMakeFiles/lib1.dir/src/developer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib1.dir/src/developer.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/developer.c -o CMakeFiles/lib1.dir/src/developer.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/developer.c -o CMakeFiles/lib1.dir/src/developer.c.s
 
 CMakeFiles/lib1.dir/src/developer_group.c.o: CMakeFiles/lib1.dir/flags.make
 CMakeFiles/lib1.dir/src/developer_group.c.o: ../src/developer_group.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Programmentwurf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/lib1.dir/src/developer_group.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib1.dir/src/developer_group.c.o   -c /workspaces/Programmentwurf/src/developer_group.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lib1.dir/src/developer_group.c.o   -c /workspaces/Programmentwurf/src/developer_group.c
 
 CMakeFiles/lib1.dir/src/developer_group.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lib1.dir/src/developer_group.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/developer_group.c > CMakeFiles/lib1.dir/src/developer_group.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/developer_group.c > CMakeFiles/lib1.dir/src/developer_group.c.i
 
 CMakeFiles/lib1.dir/src/developer_group.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lib1.dir/src/developer_group.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/developer_group.c -o CMakeFiles/lib1.dir/src/developer_group.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/developer_group.c -o CMakeFiles/lib1.dir/src/developer_group.c.s
 
 # Object files for target lib1
 lib1_OBJECTS = \

@@ -12,16 +12,6 @@
 developer.h
 /workspaces/Programmentwurf/include/developer.h
 
-/workspaces/Programmentwurf/src/developer.c
-/workspaces/Programmentwurf/include/developer.h
--
-stdio.h
--
-stdlib.h
--
-string.h
--
-
 /workspaces/Programmentwurf/src/developer_group.c
 stdio.h
 -

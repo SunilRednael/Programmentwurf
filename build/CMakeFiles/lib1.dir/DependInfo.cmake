@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/workspaces/Programmentwurf/src/developer.c" "/workspaces/Programmentwurf/build/CMakeFiles/lib1.dir/src/developer.c.o"
   "/workspaces/Programmentwurf/src/developer_group.c" "/workspaces/Programmentwurf/build/CMakeFiles/lib1.dir/src/developer_group.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

@@ -60,15 +60,15 @@ include CMakeFiles/exec_main.dir/flags.make
 CMakeFiles/exec_main.dir/src/main.c.o: CMakeFiles/exec_main.dir/flags.make
 CMakeFiles/exec_main.dir/src/main.c.o: ../src/main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspaces/Programmentwurf/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/exec_main.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exec_main.dir/src/main.c.o   -c /workspaces/Programmentwurf/src/main.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/exec_main.dir/src/main.c.o   -c /workspaces/Programmentwurf/src/main.c
 
 CMakeFiles/exec_main.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/exec_main.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/main.c > CMakeFiles/exec_main.dir/src/main.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspaces/Programmentwurf/src/main.c > CMakeFiles/exec_main.dir/src/main.c.i
 
 CMakeFiles/exec_main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/exec_main.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/main.c -o CMakeFiles/exec_main.dir/src/main.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspaces/Programmentwurf/src/main.c -o CMakeFiles/exec_main.dir/src/main.c.s
 
 # Object files for target exec_main
 exec_main_OBJECTS = \

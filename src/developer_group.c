@@ -24,7 +24,7 @@ void print_developer(developer developer[])
 {
    for(int i = 0; i < DEVELOPER_AMOUNT; i++)
    {
-      printf("Developer %d ist : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
+      printf("Developer %d is : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
    }
 }
    void print_logo(developer_group *developer_group)

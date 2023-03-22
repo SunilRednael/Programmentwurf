@@ -41,8 +41,10 @@ while(1)
         }
     else if (input==3)
          {
-         print_developer(dev_group.developer);
-        print_logo(&dev_group);   
+         printf("^^^^^^^^^^^^^^^^^^^^\n");
+         print_logo(&dev_group); 
+         print_developer(dev_group.developer); 
+         printf("^^^^^^^^^^^^^^^^^^^^\n"); 
          } 
     else if (input==4)
          {

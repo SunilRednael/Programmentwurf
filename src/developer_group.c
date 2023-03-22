@@ -29,10 +29,12 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
 //Access to the function to print the names and aliase 
 void print_developer(developer developer[])
 {
+   printf("********************\n");
    for(int i = 0; i < DEVELOPER_AMOUNT; i++)
    {
-      printf("Developer %d is : %s alias %s\n", i + 1, developer[i].name, developer[i].alias);
+      printf("====================\nDeveloper %d:\nname: \033[4;35m%s\033[0m\nalias: %s\n====================\n", i + 1, developer[i].name, developer[i].alias);
    }
+   printf("********************\n");
 }
 
 //Access to the function to print th egroup logo

@@ -11,7 +11,7 @@ char logo_template[MAX_LOGO_LENGTH] =   " -------------   -------------   ------
 void developer_group_init(developer_group *developer_group, char dev1_name[], char dev1_alias[], char dev2_name[], char dev2_alias[])
 {
 
-   /*check if one of the pointer is NULL
+   /*check if one of the pointers is NULL
    if yes, show error and return*/
 
    if(developer_group == NULL || dev1_name == NULL || dev2_name == NULL)
@@ -26,7 +26,7 @@ void developer_group_init(developer_group *developer_group, char dev1_name[], ch
 
 }
 
-//Access to the function to print the names and aliase 
+//Access to the function to print the names and aliases
 void print_developer(developer developer[])
 {
    printf("********************\n");
@@ -37,11 +37,11 @@ void print_developer(developer developer[])
    printf("********************\n");
 }
 
-//Access to the function to print th egroup logo
+//Access to the function to print the group logo
 void print_logo(developer_group *developer_group)
    {
 
-   /*check if one of the pointer is NULL
+   /*check if one of the pointers is NULL
    if yes, show error and return*/
 
    if(developer_group == NULL) 

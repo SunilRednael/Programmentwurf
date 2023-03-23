@@ -53,7 +53,7 @@ while(1)
     else
         {
          
-         //If an incorrect entry is made, show error and return
+         //If an incorrect input is made, show error and return
          printf("ERROR: Wrong Input\n");
         return 0;
         }

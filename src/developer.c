@@ -8,7 +8,7 @@
 void developer_init(developer *developer, char name[], char alias[])
 {
 
-  /*check if one of the pointer is NULL
+  /*check if one of the pointers is NULL
   if yes, show error and return*/
 
   if (developer == NULL || name == NULL || alias == NULL)
